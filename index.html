@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Norisa Ayufadhilah</title>
+<title>Norisa Ayufadhilah | Portfolio</title>
 
 <style>
 
@@ -15,63 +15,56 @@
 }
 
 body{
-    font-family:Segoe UI, sans-serif;
-    background:#f4f6f9;
-    color:#333;
+    font-family:'Segoe UI',sans-serif;
+    background:#F5EFE6;
+    color:#4E342E;
+    line-height:1.7;
 }
 
 .hero{
-    background:linear-gradient(135deg,#4f46e5,#7c3aed);
-    color:white;
+    background:#DCC5B2;
+    padding:80px 20px;
     text-align:center;
-    padding:100px 20px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #fff;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    margin-bottom:20px;
 }
 
 .hero h1{
     font-size:3rem;
+    color:#5C4033;
 }
 
 .hero p{
-    margin-top:15px;
-    font-size:1.2rem;
+    font-size:1.1rem;
+    color:#6D4C41;
 }
 
 .container{
     width:90%;
     max-width:1000px;
     margin:auto;
-    margin-top:-50px;
+    padding:40px 0;
 }
 
 .card{
     background:white;
-    border-radius:20px;
     padding:30px;
     margin-bottom:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
 h2{
-    color:#4f46e5;
+    color:#8B6B4A;
     margin-bottom:15px;
-}
-
-.project-title{
-    margin-bottom:10px;
-}
-
-.button{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 24px;
-    background:#4f46e5;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-}
-
-.button:hover{
-    background:#4338ca;
 }
 
 .skills{
@@ -81,16 +74,46 @@ h2{
 }
 
 .skill{
-    background:#eef2ff;
-    color:#4f46e5;
-    padding:8px 14px;
+    background:#EFE3D5;
+    color:#5C4033;
+    padding:8px 16px;
     border-radius:20px;
+    font-weight:500;
+}
+
+.project-card{
+    border-left:5px solid #A67B5B;
+    padding-left:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    background:#A67B5B;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#8B6B4A;
+}
+
+.contact-links a{
+    text-decoration:none;
+    color:#8B6B4A;
+    font-weight:600;
+    display:block;
+    margin:8px 0;
 }
 
 footer{
     text-align:center;
-    padding:30px;
-    color:#777;
+    padding:25px;
+    background:#DCC5B2;
+    color:#5C4033;
 }
 
 </style>
@@ -100,19 +123,28 @@ footer{
 <body>
 
 <section class="hero">
+
+    <!-- GANTI nama file foto nanti -->
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+
     <h1>Norisa Ayufadhilah</h1>
-    <p>Statistics Graduate | Data Analyst | Machine Learning Enthusiast</p>
+
+    <p>
+        Statistics Graduate | Data Analyst | Machine Learning Enthusiast
+    </p>
+
 </section>
 
 <div class="container">
 
     <div class="card">
         <h2>About Me</h2>
+
         <p>
-            Statistics graduate with interests in data analysis,
+            I am a Statistics graduate with interests in data analysis,
             machine learning, forecasting, and predictive modeling.
-            Experienced in Python, R, SPSS, TensorFlow,
-            and statistical analysis.
+            I have experience working with Python, R, SPSS, TensorFlow,
+            and statistical methods to transform data into meaningful insights.
         </p>
     </div>
 
@@ -127,32 +159,67 @@ footer{
             <span class="skill">Machine Learning</span>
             <span class="skill">Data Analysis</span>
             <span class="skill">Forecasting</span>
+            <span class="skill">Statistics</span>
         </div>
+    </div>
+
+    <div class="card">
+        <h2>Education</h2>
+
+        <p>
+            <strong>Bachelor of Statistics</strong><br>
+            Tadulako University
+        </p>
     </div>
 
     <div class="card">
         <h2>Featured Project</h2>
 
-        <h3 class="project-title">
-            BBRI Stock Price Forecasting Using BiLSTM
-        </h3>
+        <div class="project-card">
 
-        <p>
-            Developed a stock price forecasting model using
-            BiLSTM with Grid Search hyperparameter optimization
-            and Time Series Cross-Validation.
-        </p>
+            <h3>BBRI Stock Price Forecasting Using BiLSTM with Grid Search</h3>
 
-        <a class="button"
-        href="https://github.com/norisaayufadhilah/bilstm-gridsearch-bbri-stock-forecasting">
-        View Project
-        </a>
+            <p>
+                Developed a stock price forecasting model using
+                Bidirectional Long Short-Term Memory (BiLSTM)
+                combined with Grid Search hyperparameter optimization
+                and Time Series Cross-Validation.
+            </p>
+
+            <a class="btn"
+            href="https://github.com/norisaayufadhilah/bilstm-gridsearch-bbri-stock-forecasting"
+            target="_blank">
+            View Project
+            </a>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+
+        <div class="contact-links">
+
+            <a href="https://github.com/norisaayufadhilah" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/USERNAME-LINKEDIN" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="mailto:emailkamu@gmail.com">
+                Email
+            </a>
+
+        </div>
+
     </div>
 
 </div>
 
 <footer>
-    © 2026 Norisa Ayufadhilah
+    © 2026 Norisa Ayufadhilah | Portfolio Website
 </footer>
 
 </body>
